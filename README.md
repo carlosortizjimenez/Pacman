@@ -3,12 +3,12 @@
 <img src= "PacMan1.png" width='300' />
 
 ## Project discription
-The begining of the project started when given a started file to have the pacman move across the window. The end of the profect was to have the pac man move across the window and detect the boundries of the window and switch directions.
+The goal of the project was to begin working with the DOM. The program allows the user to dictate the number of pacmen that will apear and interact with the boundries of the window by bouncing off of them. 
 ## How to run
-Download all the files to your computer in the same file. Drag and drop the index.html file to a blank web browser. 
+The program can be run by selecting either "Start Game" or "Add Pacman" in any order. The speed of the pacmen can be increased by selecting "Start game" while the program is running. Have fun!
 
 ## Roadmap of future imporovments
-At the present time there are not plans to add future improvments
+The immediate improvment down the line is to have the Pacmen interact with eachother and have them change color upon impact. 
 ## MIT License
 MIT License
 
