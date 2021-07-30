@@ -5,15 +5,15 @@
         ['PacMan3.png', 'PacMan4.png']
     ];
     var direction = 0;
-    const pacMen = [];
-
+    const pacMen = [];// This array holds all the pacmen
+    // This function returns an object with random values
     function setToRandom(scale) {
         return {
             x: Math.random() * scale,
             y: Math.random() * scale
         }
     }
-    // Factory to make a PacMan 
+   // Factory to make a PacMan at a random position with random velocity
     function makePac() {
         // returns an object with values scaled {x: 33, y: 21}
         let velocity = setToRandom(10);
@@ -27,7 +27,7 @@
         newimg.style.left = position.x;
         newimg.style.top = position.y;
         game.appendChild(newimg);
-        // new style of creating an object
+        // return details in an object
         return {
             position,
             velocity,
@@ -36,7 +36,7 @@
     }
 
     function update() {
-        //loop over pacmen array and move each one and move image in DOM
+         // loop over pacmen array and move each one and move image in DOM
         pacMen.forEach((item) => {
             checkCollisions(item)
             item.position.x += item.velocity.x;
